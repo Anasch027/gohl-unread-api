@@ -10,7 +10,7 @@ app.get("/unread-count", async (req, res) => {
   try {
     const r = await fetch(`https://services.leadconnectorhq.com/conversations/unread/count?locationId=${locationId}`, {
       headers: {
-        Authorization: `Bearer ${process.env.GHL_AGENCY_API_KEY}`,
+        Authorization: `Bearer ${process.env.eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjb21wYW55X2lkIjoiM1VSR3E0cWdqZm4xRzRaM1kyeDIiLCJ2ZXJzaW9uIjoxLCJpYXQiOjE3NjEyNTg3NTQyNDYsInN1YiI6IkVGTjBmOW5OalVkT0ttRTBHamszIn0.PRvyzUIQ-eMFuIuvA2cmIuBfYln_q9afVR2cE7JH1Yo}`,
         Accept: "application/json",
         Version: "2021-07-28"
       }
